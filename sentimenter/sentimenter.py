@@ -17,8 +17,11 @@ from sklearn.metrics import explained_variance_score, mean_absolute_error, silho
 from sklearn.ensemble import RandomForestRegressor, ExtraTreesRegressor
 from sklearn.tree import DecisionTreeRegressor
 from sklearn.grid_search import GridSearchCV
-
 from sklearn.externals import joblib
+
+from pandas_datareader import data, wb
+
+from nltk.sentiment.vader import SentimentIntensityAnalyzer
 
 import pydot
 from IPython.display import Image
